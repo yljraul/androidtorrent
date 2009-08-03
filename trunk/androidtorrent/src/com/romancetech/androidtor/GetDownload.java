@@ -203,59 +203,7 @@ public class GetDownload extends Activity implements Runnable  {
 		
 		
 		
-		/*
-		//check temp files here
-		int askcontinue=0;
-		nbOfFiles = t.length.size();
-		String saveas = Constants.SAVEPATH; // Should be configurable
-        if (this.nbOfFiles > 1)
-            saveas += t.saveAs + "/";
-        new File(saveas).mkdirs();
-        for (int i = 0; i < nbOfFiles; i++) {
-        	
-        	File temp = new File(saveas + ((String) (t.name.get(i))));
-            
-        	if(temp.exists()){
-        		 askcontinue = 1;
-        	}else{
-        		 askcontinue=0;
-        	}
-        	try {
-                output_files[i] = new RandomAccessFile(temp, "rw");
-                output_files[i].setLength((Integer)t.length.get(
-                        i));
-            } catch (IOException ioe) {
-                System.err.println("Could not create temp files");
-                ioe.printStackTrace();
-            }
-        }
 		
-		if(askcontinue==1){
-			
-			//promt for download ?
-     	   Builder alert1 = new AlertDialog.Builder(this)
-            .setTitle("AndroidTor")
-            .setMessage("File exists already, resume download? (file rebuilding will take a few min)")
-            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                       dlcontinue=1;
-                    }
-            })
-            .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                            //Put your code in here for a negative response
-                    	dlcontinue=0;
-                 	  
-                    }
-            });
-     	   
-     	   alert1.show();
-			
-			
-		}
-		
-        
-        */
         
 		
 		dm = new DownloadManager(t, Utils.generateID(),dlcontinue);
