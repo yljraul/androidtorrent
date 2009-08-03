@@ -76,15 +76,6 @@ public class GetDownload extends Activity implements Runnable  {
 	private Button closebutton;
 	public int dlcontinue=0;
 	
-	//piecemap database 
-	 private static final String CREATE_TABLE_PIECES = "create table piecemap (id integer primary key autoincrement, "
-		                                                 + "index int not null," 
-		                                                 + "length int not null," 
-		                                                 + "blocksize int not null," 
-		                                                 + "sha1 int not null," 
-		                                                 + "torrent int not null," 
-		                                                 + " complete int not null);";
-	
 	 
 	 
 	
