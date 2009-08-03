@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+android:id="@+id/widget39"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:fitsSystemWindows="true">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instructions:  Download a .torrent with the browser. Open the browser download menu, or use a file manager to open the file. Your torrent will be downloaded to you SD card.  Make sure sdcard is NOT mounted to your PC!"></TextView>
+</AbsoluteLayout>
